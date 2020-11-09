@@ -40,4 +40,9 @@ router.post('/new', function(req, res, next) {
 
 });
 
+// router.delete('/',function(req,res,next){
+//   content.pop();
+//   res.redirect('/')
+// });
+
 module.exports = router;
