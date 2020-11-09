@@ -24,4 +24,20 @@ router.get('/new', function(req, res, next) {
   res.render('form', { title: 'NEW PAGE', header: 'CONTENT LIST' });
 });
 
+router.post('/new', function(req, res, next) {
+  let cont = req.body;
+  let textcont = cont.text;
+  let usercont = cont.user;
+
+  let newmessage = {
+    text:textcont,
+    user:usercont,
+    added:new Date()
+  }
+
+  content.push(newmessage);
+  res.redirect('/');
+
+});
+
 module.exports = router;

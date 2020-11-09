@@ -7,6 +7,10 @@
   <body>
     <h1><%= title %></h1>
     <p>Welcome to <%= title %></p>
-
+    <form class="newPageRoute" action="/new" method="post">
+      <input type="text" name="text" value="" placeholder="Enter message">
+      <input type="text" name="user" value="" placeholder="Enter User">
+      <button type="submit" name="button">Submit</button>
+    </form>
   </body>
 </html>
