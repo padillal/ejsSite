@@ -40,9 +40,9 @@ router.post('/new', function(req, res, next) {
 
 });
 
-router.delete('/',function(req,res,next){
+router.get('/delete',function(req,res,next){
   content.pop();
-  res.send('/')
+  res.render('index', { messages: content , title: 'DELETE PAGE', header: 'CONTENT LIST' })
 });
 
 module.exports = router;
