@@ -1,3 +1,3 @@
-# herokuapp
+# ejsSite
 
 This app uses ejs to create a mini message board with various routes.
